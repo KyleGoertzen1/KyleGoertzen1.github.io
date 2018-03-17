@@ -129,7 +129,19 @@
 
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+#example1 {
+    padding: 1000px;
+    background: url(pic.jpg);
+    background-repeat: no-repeat;
+	background-size: 2560px 1536px;
+}
+</style>
+</head>
 <body>
-	<a href="news.html">News</a>
+	<a href="news.html">Stock</a> | <a href="info.html">Reference</a>
+	<div id="example1">
+	</div>
 </body>
 </html>
