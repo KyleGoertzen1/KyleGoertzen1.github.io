@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<a href="index.html">Main page |</a><a href="info.html"> Info | </a> <a href="news.html"> News</a>
+<p id="msg1">The buttons below show www.getsmarteraboutmoney.ca</p> <br>
+<button onclick="money()">Open investment information</button>
+<button onclick="hidemoney()">Hide investment information</button>
+<p></p>
+
+<p id="msg2">The buttons below links to a video about minor one</p> <br>
+<button onclick="minor()">Open video about minor one</button>
+<button onclick="hideminor()">Hide video</button>
+<p></p>
+<script>
+function money()
+{
+	document.querySelectorAll("p")[1].innerHTML = "<iframe src=https://www.getsmarteraboutmoney.ca/invest/investing-basics/understanding-risk/diversification/ height=500 width=1000></iframe>";
+}
+
+function hidemoney()
+{
+	document.querySelectorAll("p")[1].innerHTML = "";
+}
+
+function minor()
+{
+	document.querySelectorAll("p")[3].innerHTML = "<iframe width=560 height=315 src=https://www.youtube.com/embed/LNS8ucQj-rM frameborder=0 allow=autoplay; encrypted-media allowfullscreen></iframe>";
+}
+
+function hideminor()
+{
+	document.querySelectorAll("p")[3].innerHTML = "";
+}
+</script>
+</body>
+</html>
