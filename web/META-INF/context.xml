@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/MSSQL">
+  <Resource auth="Container" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" name="jdbc/MSSQL" password="password" type="javax.sql.DataSource" url="jdbc:sqlserver://localhost:24588;databaseName=Test;user=sa;password=password" username="sa"/>
+</Context>
